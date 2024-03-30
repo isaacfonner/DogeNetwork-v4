@@ -13,5 +13,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: npm i
+      - run: hostname -I
       - run: npm start
       - run: echo "🍏 This job's status is ${{ job.status }}."
